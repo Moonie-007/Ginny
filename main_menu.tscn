@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://b8ll4pxduar0w"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_px22c"]
+light_mode = 1
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_e0pad"]
+
+[node name="MainMenu" type="Control" unique_id=120686155]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=689407533]
+layout_mode = 0
+offset_right = 1150.0
+offset_bottom = 646.0
+color = Color(0, 0, 0.09411765, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=431320593]
+layout_mode = 0
+offset_left = 481.0
+offset_top = 418.0
+offset_right = 628.0
+offset_bottom = 502.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=1725011164]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="CenterContainer/VBoxContainer" unique_id=2018623258]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_px22c")
+layout_mode = 2
+text = "Start"
+icon = SubResource("ViewportTexture_e0pad")
